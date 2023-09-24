@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Happy Smile</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet">
+   <link rel="shortcut icon" type="image/x-icon" href="images/favicons/favicon.ico">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/nouislider.min.css">
+   <link rel="stylesheet" href="css/choices.min.css">
+   <link rel="stylesheet" href="css/splide.min.css">
+   <link rel="stylesheet" href="css/air-datepicker.css">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+   <div class="wrapper">
+
+      <div class="btn__up">&uarr;</div>
+
+      <header class="header">
+         <div class="header__inner">
+            <div class="header__top">
+               <div class="container">
+                  <div class="header__top-inner">
+                     <a class="logo" href="#">
+                        <picture class="pictures-box">
+                           <source srcset="images/logo.svg" media="(max-width: 425px)">
+                           <source srcset="images/logo-480.svg" media="(max-width: 570px)">
+                           <img class="logo__img" src="images/logo.svg" alt="логотип">
+                        </picture>
+                     </a>
+                     <nav class="menu">
+                        <ul class="menu__list">
+                           <li class="menu__list-item">
+                              <a class="menu__list-link" href="#">Услуги</a>
+                           </li>
+                           <li class="menu__list-item">
+                              <a class="menu__list-link" href="#">Наши врачи</a>
+                           </li>
+                           <li class="menu__list-item">
+                              <a class="menu__list-link" href="#">Отзывы</a>
+                           </li>
+                           <li class="menu__list-item">
+                              <a class="menu__list-link" href="#">контакты</a>
+                           </li>
+                        </ul>
+                     </nav>
+                     <a class="header__phone" href="tel:+4801924184461">
+                        <svg class="phone__icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                           viewBox="0 0 36 36" fill="none">
+                           <rect width="36" height="36" rx="18" fill="#80CD29" />
+                           <path
+                              d="M22.4333 19.6334C21.9634 19.1696 21.3769 19.1696 20.91 19.6334C20.5539 19.9865 20.1978 20.3396 19.8477 20.6987C19.7519 20.7975 19.6711 20.8184 19.5544 20.7526C19.324 20.6269 19.0786 20.5252 18.8572 20.3875C17.8247 19.7381 16.9599 18.9032 16.1938 17.9636C15.8137 17.4968 15.4756 16.997 15.2391 16.4344C15.1913 16.3207 15.2002 16.2459 15.293 16.1532C15.6491 15.809 15.9963 15.4559 16.3464 15.1028C16.8342 14.612 16.8342 14.0375 16.3434 13.5437C16.0651 13.2624 15.7868 12.9871 15.5085 12.7058C15.2212 12.4185 14.9369 12.1283 14.6466 11.844C14.1768 11.3861 13.5902 11.3861 13.1234 11.847C12.7643 12.2001 12.4202 12.5622 12.0551 12.9093C11.7169 13.2295 11.5463 13.6215 11.5104 14.0794C11.4536 14.8245 11.6361 15.5277 11.8935 16.213C12.4202 17.6314 13.2222 18.8913 14.1947 20.0464C15.5085 21.6084 17.0766 22.8443 18.911 23.7361C19.737 24.1371 20.5928 24.4453 21.5235 24.4962C22.1639 24.5321 22.7205 24.3705 23.1664 23.8708C23.4717 23.5296 23.8158 23.2184 24.139 22.8922C24.6178 22.4074 24.6208 21.8209 24.145 21.3421C23.5764 20.7705 23.0048 20.202 22.4333 19.6334Z"
+                              fill="#091C47" />
+                        </svg>
+                        <div class="phone__info-box">
+                           <div class="phone__num">
+                              +48 (019) 24-184-461
+                           </div>
+                           <div class="phone__text">
+                              Пн - Пт с 9:00 до 20:00
+                           </div>
+                        </div>
+                     </a>
+                     <div class="icon-menu__wrapper">
+                        <button type="button" class="icon-menu"><span></span></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header__content">
+               <div class="container">
+                  <div class="header__content-wrapper">
+                     <div class="header__content-mobile"></div>
+                     <div class="header__content-inner">
+                        <div class="header__content-info">
+                           <div class="content-info__body">
+                              <h1 class="content-info__title" data-da=".header__content-mobile,950,first">
+                                 Мы подберем <br class="content-info__title-br"> для вас стоматолога.
+                              </h1>
+                              <h3 class="content-info__sub-title" data-da=".header__content-mobile,950,last">
+                                 <img class="sub-title__arrow" src="images/icons/arrow-sub-title.svg" alt="">
+                                 Который говорит на вашем языке
+                              </h3>
+                              <p class="content-info__description">
+                                 Мы компания Happy Smile Deutschland. Занимаемся страхованием стоматологических услуг и
+                                 экономим деньги наших клиентов на врачей
+                              </p>
+                              <div class="content-info__btns-box">
+                                 <a class="basic__btn content-application__btn" href="#"
+                                    data-da=".header__content-wrapper,650,last">
+                                    Оставить заявку
+                                 </a>
+                                 <a class="additional__btn content-video__btn" href="#"
+                                    data-da=".header__content-wrapper,475,last">
+                                    <svg class="content-video__img" xmlns="http://www.w3.org/2000/svg" width="24"
+                                       height="24" viewBox="0 0 24 24" fill="none">
+                                       <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12ZM8 7C8 6.21456 8.86395 5.73572 9.53 6.152L17.53 11.152C18.1567 11.5437 18.1567 12.4563 17.53 12.848L9.53 17.848C8.86395 18.2643 8 17.7854 8 17V7ZM10 8.80425L15.1132 12L10 15.1958V8.80425Z"
+                                          fill="#091C47" />
+                                    </svg>
+                                    <span class="video__btn-text">Смотреть</span>видео
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="header__content-picture">
+                           <div class="content-picture__body">
+                              <div class="rating__box">
+                                 <div class="rating__box-body">
+                                    <div class="rating__text">
+                                       Рейтинг:
+                                       <span class="rating__num">5.00</span>
+                                    </div>
+                                    <svg class="rating__img" xmlns="http://www.w3.org/2000/svg" width="138" height="26"
+                                       viewBox="0 0 138 26" fill="none">
+                                       <path
+                                          d="M12.0188 2.69597C12.2945 1.84739 13.495 1.84739 13.7707 2.69597L15.583 8.27361C15.7063 8.65311 16.0599 8.91004 16.459 8.91004H22.3237C23.2159 8.91004 23.5869 10.0518 22.865 10.5762L18.1204 14.0234C17.7976 14.258 17.6625 14.6737 17.7858 15.0532L19.5981 20.6308C19.8738 21.4794 18.9026 22.185 18.1807 21.6606L13.4361 18.2134C13.1133 17.9789 12.6762 17.9789 12.3534 18.2134L7.60873 21.6606C6.88689 22.185 5.91566 21.4794 6.19137 20.6308L8.00366 15.0532C8.12697 14.6737 7.99189 14.258 7.66907 14.0234L2.92444 10.5762C2.2026 10.0518 2.57358 8.91004 3.46582 8.91004H9.3305C9.72953 8.91004 10.0832 8.65311 10.2065 8.27361L12.0188 2.69597Z"
+                                          fill="#F2C94C" />
+                                       <path
+                                          d="M40.0188 2.69597C40.2945 1.84739 41.495 1.84739 41.7707 2.69597L43.583 8.27361C43.7063 8.65311 44.0599 8.91004 44.459 8.91004H50.3237C51.2159 8.91004 51.5869 10.0518 50.865 10.5762L46.1204 14.0234C45.7976 14.258 45.6625 14.6737 45.7858 15.0532L47.5981 20.6308C47.8738 21.4794 46.9026 22.185 46.1807 21.6606L41.4361 18.2134C41.1133 17.9789 40.6762 17.9789 40.3534 18.2134L35.6087 21.6606C34.8869 22.185 33.9157 21.4794 34.1914 20.6308L36.0037 15.0532C36.127 14.6737 35.9919 14.258 35.6691 14.0234L30.9244 10.5762C30.2026 10.0518 30.5736 8.91004 31.4658 8.91004H37.3305C37.7295 8.91004 38.0832 8.65311 38.2065 8.27361L40.0188 2.69597Z"
+                                          fill="#F2C94C" />
+                                       <path
+                                          d="M68.0188 2.69597C68.2945 1.84739 69.495 1.84739 69.7707 2.69597L71.583 8.27361C71.7063 8.65311 72.0599 8.91004 72.459 8.91004H78.3237C79.2159 8.91004 79.5869 10.0518 78.865 10.5762L74.1204 14.0234C73.7976 14.258 73.6625 14.6737 73.7858 15.0532L75.5981 20.6308C75.8738 21.4794 74.9026 22.185 74.1807 21.6606L69.4361 18.2134C69.1133 17.9789 68.6762 17.9789 68.3534 18.2134L63.6087 21.6606C62.8869 22.185 61.9157 21.4794 62.1914 20.6308L64.0037 15.0532C64.127 14.6737 63.9919 14.258 63.6691 14.0234L58.9244 10.5762C58.2026 10.0518 58.5736 8.91004 59.4658 8.91004H65.3305C65.7295 8.91004 66.0832 8.65311 66.2065 8.27361L68.0188 2.69597Z"
+                                          fill="#F2C94C" />
+                                       <path
+                                          d="M96.0188 2.69597C96.2945 1.84739 97.495 1.84739 97.7707 2.69597L99.583 8.27361C99.7063 8.65311 100.06 8.91004 100.459 8.91004H106.324C107.216 8.91004 107.587 10.0518 106.865 10.5762L102.12 14.0234C101.798 14.258 101.663 14.6737 101.786 15.0532L103.598 20.6308C103.874 21.4794 102.903 22.185 102.181 21.6606L97.4361 18.2134C97.1133 17.9789 96.6762 17.9789 96.3534 18.2134L91.6087 21.6606C90.8869 22.185 89.9157 21.4794 90.1914 20.6308L92.0037 15.0532C92.127 14.6737 91.9919 14.258 91.6691 14.0234L86.9244 10.5762C86.2026 10.0518 86.5736 8.91004 87.4658 8.91004H93.3305C93.7295 8.91004 94.0832 8.65311 94.2065 8.27361L96.0188 2.69597Z"
+                                          fill="#F2C94C" />
+                                       <path
+                                          d="M124.019 2.69597C124.294 1.84739 125.495 1.84739 125.771 2.69597L127.583 8.27361C127.706 8.65311 128.06 8.91004 128.459 8.91004H134.324C135.216 8.91004 135.587 10.0518 134.865 10.5762L130.12 14.0234C129.798 14.258 129.663 14.6737 129.786 15.0532L131.598 20.6308C131.874 21.4794 130.903 22.185 130.181 21.6606L125.436 18.2134C125.113 17.9789 124.676 17.9789 124.353 18.2134L119.609 21.6606C118.887 22.185 117.916 21.4794 118.191 20.6308L120.004 15.0532C120.127 14.6737 119.992 14.258 119.669 14.0234L114.924 10.5762C114.203 10.0518 114.574 8.91004 115.466 8.91004H121.331C121.73 8.91004 122.083 8.65311 122.206 8.27361L124.019 2.69597Z"
+                                          fill="#F2C94C" />
+                                    </svg>
+                                 </div>
+                              </div>
+                              <picture class="pictures-box">
+                                 <source srcset="images/header-content-picture-360.png" media="(max-width: 475px)">
+                                 <source srcset="images/header-content-picture-650.png" media="(max-width: 650px)">
+                                 <source srcset="images/header-content-picture-768.png" media="(max-width: 768px)">
+                                 <source srcset="images/header-content-picture.png" media="(max-width: 950px)">
+                                 <source srcset="images/header-content-picture-1000.png" media="(max-width: 1000px)">
+                                 <img class="content-picture__img" src="images/header-content-picture.png" alt="">
+                              </picture>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <main class="main">
+
+
+
+
+
+
+      </main>
+
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__inner">
+
+
+            </div>
+         </div>
+      </footer>
+
+   </div>
+
+
+
+   <div class="popup__application" id="application">
+      <form class="popup__application-form" action="#">
+         <div class="popup__application-inner">
+            <div class="application__title-box">
+               <div class="application__title">
+                  Заявка
+               </div>
+               <div class="application__sub-title">
+                  Заполните форму и мы перезвоним
+                  и ответим на все интересующие вопросы
+               </div>
+            </div>
+            <div class="application__user-box">
+               <div class="user__item">
+                  <label for="formNameModal" class="application-form__label">Ваше имя:</label>
+                  <input id="formNameModal" type="text" name="name" class="application-form__input"
+                     placeholder="Иван Иванов" autocomplete="off" required>
+               </div>
+               <div class="user__item">
+                  <label for="formPhoneModal" class="application-form__label">Номер телефона:</label>
+                  <input id="formPhoneModal" type="tel" name="phone" class="application-form__input"
+                     placeholder="+7 (999) 999 99 99" autocomplete="off" required>
+               </div>
+            </div>
+            <div class="application__btn-box">
+               <a class="application__btn" data-fancybox data-src="#thanks" href="javascript:;">
+                  Отправить
+               </a>
+            </div>
+            <div class="application__description-box">
+               <p class="application__description">
+                  Нажимая на кнопку “Отправить”, вы даете согласие на обработку своих персональных данных
+               </p>
+            </div>
+         </div>
+      </form>
+   </div>
+
+   <div class="popup__call-back" id="call-back">
+      <form class="popup__call-back-form" action="#">
+         <div class="popup__call-back-inner">
+            <div class="call-back__title-box">
+               <div class="call-back__title">
+                  Перезвонить?
+               </div>
+               <div class="call-back__sub-title">
+                  Оставьте номер телефон и мы свяжемся с вами в течение 5 минут
+               </div>
+            </div>
+            <div class="call-back__user-box">
+               <div class="user__item">
+                  <label for="formPhone" class="call-back-form__label">Номер телефона:</label>
+                  <input id="formPhone" type="tel" name="phone" class="call-back-form__input"
+                     placeholder="+7 (999) 999 99 99" autocomplete="off" required>
+               </div>
+            </div>
+            <div class="call-back__btn-box">
+               <button class="call-back__btn" type="submit">
+                  Перезвонить
+               </button>
+            </div>
+            <div class="call-back__description-box">
+               <p class="call-back__description">
+                  Нажимая на кнопку “Перезвонить”, вы даете согласие на обработку своих персональных данных
+               </p>
+            </div>
+         </div>
+      </form>
+   </div>
+
+   <div class="popup__thanks" id="thanks">
+      <form class="popup__thanks-form" action="#">
+         <div class="popup__thanks-inner">
+            <div class="popup__thanks-body">
+               <!-- <img class="popup__thanks-img" src="images/icons/thanks-icon.svg" alt=""> -->
+               <div class="popup__thanks-title">Сообщение отправлено!</div>
+               <div class="popup__thanks-text">
+                  Наши менеджеры скоро свяжутся
+                  с вами для уточнения деталей
+               </div>
+            </div>
+         </div>
+      </form>
+   </div>
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/inputmask.min.js"></script>
+   <script src="js/splide.min.js"></script>
+   <script src="js/splide-extension-auto-scroll.min.js"></script>
+   <script src="js/wNumb.min.js"></script>
+   <script src="js/choices.min.js"></script>
+   <script src="js/nouislider.min.js"></script>
+   <script src="js/main.min.js"></script>
+</body>
+
+</html>

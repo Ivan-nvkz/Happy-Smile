@@ -97,12 +97,12 @@
                                  экономим деньги наших клиентов на врачей
                               </p>
                               <div class="content-info__btns-box">
-                                 <a class="basic__btn content-application__btn" href="#"
-                                    data-da=".header__content-wrapper,650,last">
+                                 <a class="basic__btn content-application__btn" data-fancybox data-src="#application"
+                                    href="javascript:;" data-da=".header__content-wrapper,650,last">
                                     Оставить заявку
                                  </a>
-                                 <a class="additional__btn content-video__btn" href="#"
-                                    data-da=".header__content-wrapper,475,last">
+                                 <a class="additional__btn content-video__btn" data-fancybox
+                                    href="https://youtu.be/5bo51sL8Fr4" data-da=".header__content-wrapper,475,last">
                                     <svg class="content-video__img" xmlns="http://www.w3.org/2000/svg" width="24"
                                        height="24" viewBox="0 0 24 24" fill="none">
                                        <path fill-rule="evenodd" clip-rule="evenodd"
@@ -186,33 +186,44 @@
          <div class="popup__application-inner">
             <div class="application__title-box">
                <div class="application__title">
-                  Заявка
+                  Отправьте нам заявку
                </div>
                <div class="application__sub-title">
-                  Заполните форму и мы перезвоним
-                  и ответим на все интересующие вопросы
+                  Мы свяжемся с вами в течении 15 минут
                </div>
             </div>
             <div class="application__user-box">
                <div class="user__item">
-                  <label for="formNameModal" class="application-form__label">Ваше имя:</label>
-                  <input id="formNameModal" type="text" name="name" class="application-form__input"
-                     placeholder="Иван Иванов" autocomplete="off" required>
+                  <img class="application-form__input-img" src="images/icons/input-user-icon.svg" alt="">
+                  <input type="text" name="name" class="application-form__input" placeholder="Имя" autocomplete="off"
+                     required>
                </div>
                <div class="user__item">
-                  <label for="formPhoneModal" class="application-form__label">Номер телефона:</label>
-                  <input id="formPhoneModal" type="tel" name="phone" class="application-form__input"
-                     placeholder="+7 (999) 999 99 99" autocomplete="off" required>
+                  <img class="application-form__input-img" src="images/icons/input-phone-icon.svg" alt="">
+                  <input type="tel" name="phone" class="application-form__input" placeholder="Номер телефона"
+                     autocomplete="off" required>
+               </div>
+               <div class="user__item">
+                  <img class="application-form__input-img" src="images/icons/input-mail-icon.svg" alt="">
+                  <input type="email" name="mail" class="application-form__input" placeholder="E-mail"
+                     autocomplete="off" required>
                </div>
             </div>
             <div class="application__btn-box">
-               <a class="application__btn" data-fancybox data-src="#thanks" href="javascript:;">
-                  Отправить
+               <a class="application__btn basic__btn" data-fancybox data-src="#thanks" href="javascript:;">
+                  Оставить заявку
                </a>
             </div>
             <div class="application__description-box">
                <p class="application__description">
-                  Нажимая на кнопку “Отправить”, вы даете согласие на обработку своих персональных данных
+                  <label class="application__label">
+                     <input class="application__chekbox" type="checkbox" checked>
+                     <span class="application__chekbox-style"></span>
+                  </label>
+                  Соглашаюсь с
+                  <a class="application__description-concordance" href="#">
+                     условиями передачи данных
+                  </a>
                </p>
             </div>
          </div>
@@ -255,12 +266,16 @@
       <form class="popup__thanks-form" action="#">
          <div class="popup__thanks-inner">
             <div class="popup__thanks-body">
-               <!-- <img class="popup__thanks-img" src="images/icons/thanks-icon.svg" alt=""> -->
-               <div class="popup__thanks-title">Сообщение отправлено!</div>
-               <div class="popup__thanks-text">
-                  Наши менеджеры скоро свяжутся
-                  с вами для уточнения деталей
+               <div class="popup__thanks-title">
+                  Всё прошло успешно!
                </div>
+               <div class="popup__thanks-text">
+                  В ближайшее время мы вам перезвоним на указанный номер телефона.
+               </div>
+               <img class="popup__thanks-img" src="images/popup-thanks-img.svg" alt="">
+               <a class="main__btn basic__btn" href="index.html">
+                  Вернуться на главную
+               </a>
             </div>
          </div>
       </form>

@@ -171,7 +171,7 @@
                </div>
                <div class="insurance__inner">
                   <div class="insurance__items">
-                     <a class="insurance__item insurance__item--1" data-fancybox data-src="#call-back"
+                     <a class="insurance__item insurance__item--1" data-fancybox data-src="#implants"
                         href="javascript:;">
                         <div class="insurance__item-block">
                            <div class="insurance-item-block__pictures">
@@ -186,10 +186,10 @@
                            </div>
                         </div>
                      </a>
-                     <a class="insurance__item insurance__item--2" href="#">
+                     <a class="insurance__item insurance__item--2" data-fancybox data-src="#crowns" href="javascript:;">
                         <div class="insurance__item-block">
                            <div class="insurance-item-block__pictures">
-                              <img class="insurance-item-block__images" src="images/insurance-img-02.svg" alt="">
+                              <img class="insurance-item-block__images" src="images/insurance-img-02.png" alt="">
                            </div>
                            <div class="insurance-item-block__body">
                               <div class="insurance-item-block__title">Коронки</div>
@@ -200,7 +200,8 @@
                            </div>
                         </div>
                      </a>
-                     <a class="insurance__item insurance__item--3" href="#">
+                     <a class="insurance__item insurance__item--3" data-fancybox data-src="#bridges"
+                        href="javascript:;">
                         <div class="insurance__item-block">
                            <div class="insurance-item-block__pictures">
                               <img class="insurance-item-block__images" src="images/insurance-img-03.svg" alt="">
@@ -214,7 +215,8 @@
                            </div>
                         </div>
                      </a>
-                     <a class="insurance__item insurance__item--4" href="#">
+                     <a class="insurance__item insurance__item--4" data-fancybox data-src="#brackets"
+                        href="javascript:;">
                         <div class="insurance__item-block">
                            <div class="insurance-item-block__pictures">
                               <img class="insurance-item-block__images" src="images/insurance-img-04.svg" alt="">
@@ -228,10 +230,11 @@
                            </div>
                         </div>
                      </a>
-                     <a class="insurance__item insurance__item--5" href="#">
+                     <a class="insurance__item insurance__item--5" data-fancybox data-src="#prostheses"
+                        href="javascript:;">
                         <div class="insurance__item-block">
                            <div class="insurance-item-block__pictures">
-                              <img class="insurance-item-block__images" src="images/insurance-img-05.svg" alt="">
+                              <img class="insurance-item-block__images" src="images/insurance-img-05.png" alt="">
                            </div>
                            <div class="insurance-item-block__body">
                               <div class="insurance-item-block__title">Протезы</div>
@@ -242,7 +245,8 @@
                            </div>
                         </div>
                      </a>
-                     <a class="insurance__item insurance__item--6" href="#">
+                     <a class="insurance__item insurance__item--6" data-fancybox data-src="#whitening"
+                        href="javascript:;">
                         <div class="insurance__item-block">
                            <div class="insurance-item-block__pictures">
                               <img class="insurance-item-block__images" src="images/insurance-img-06.svg" alt="">
@@ -911,7 +915,6 @@
    </div>
 
 
-
    <div class="popup__application" id="application">
       <form class="popup__application-form" action="#">
          <div class="popup__application-inner">
@@ -961,33 +964,408 @@
       </form>
    </div>
 
-   <div class="popup__call-back" id="call-back">
-      <form class="popup__call-back-form" action="#">
-         <div class="popup__call-back-inner">
-            <div class="call-back__title-box">
-               <div class="call-back__title">
-                  Перезвонить?
-               </div>
-               <div class="call-back__sub-title">
-                  Оставьте номер телефон и мы свяжемся с вами в течение 5 минут
+   <div class="popup__insurance popup__implants" id="implants">
+      <form class="popup__insurance-form" action="#">
+         <div class="popup__insurance-inner">
+            <div class="popup__insurance-content-block">
+               <div class="popup__insurance-content-body">
+                  <div class="popup__insurance-content-picture">
+                     <img class="popup__insurance-content-img" src="images/popup-insurance-img-01.jpg" alt="">
+                  </div>
+                  <div class="popup__insurance-content-title">
+                     Импланты
+                  </div>
+                  <div class="popup__insurance-content-text">
+                     это искусственные корни зубов, которые вживляются в челюстную кость для замены отсутствующих зубов.
+                     Этот инновационный метод предлагает постоянное решение, которое является одновременно эстетически
+                     привлекательным и функциональным. Имплантаты устойчивы и ощущаются как естественные зубы, что
+                     позволяет смеяться и жевать без ограничений.
+                  </div>
                </div>
             </div>
-            <div class="call-back__user-box">
-               <div class="user__item">
-                  <label for="formPhone" class="call-back-form__label">Номер телефона:</label>
-                  <input id="formPhone" type="tel" name="phone" class="call-back-form__input"
-                     placeholder="+7 (999) 999 99 99" autocomplete="off" required>
+            <div class="popup__insurance-form-block">
+               <div class="insurance__user-box">
+                  <div class="insurance-user__item">
+                     <label for="formNameModal" class="insurance-form__label">Введите ваше имя</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-user-icon.svg" alt="">
+                        <input id="formNameModal" type="text" name="name" class="insurance-form__input"
+                           placeholder="Имя" autocomplete="off" required>
+                     </div>
+                  </div>
+                  <div class="insurance-user__item">
+                     <label for="formPhoneModal" class="insurance-form__label">Введите ваш номер телефона:</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-phone-icon.svg" alt="">
+                        <input id="formPhoneModal" type="tel" name="phone" class="insurance-form__input"
+                           placeholder="Номер телефона" autocomplete="off" required>
+                     </div>
+                  </div>
+                  <div class="insurance-user__item">
+                     <label for="formMailModal" class="insurance-form__label">Введите ваш e-mail</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-mail-icon.svg" alt="">
+                        <input id="formMailModal" type="email" name="mail" class="insurance-form__input"
+                           placeholder="E-mail" autocomplete="off" required>
+                     </div>
+                  </div>
+               </div>
+               <div class="insurance__btn-box">
+                  <a class="insurance__btn basic__btn" data-fancybox data-src="#thanks" href="javascript:;">
+                     Оставить заявку
+                  </a>
+               </div>
+               <div class="insurance__description-box">
+                  <p class="insurance__description">
+                     <label class="insurance__label">
+                        <input class="insurance__chekbox" type="checkbox" checked>
+                        <span class="insurance__chekbox-style"></span>
+                     </label>
+                     Соглашаюсь с
+                     <a class="application__description-concordance" href="#">
+                        условиями передачи данных
+                     </a>
+                  </p>
                </div>
             </div>
-            <div class="call-back__btn-box">
-               <button class="call-back__btn" type="submit">
-                  Перезвонить
-               </button>
+         </div>
+      </form>
+   </div>
+
+   <div class="popup__insurance popup__implants" id="crowns">
+      <form class="popup__insurance-form" action="#">
+         <div class="popup__insurance-inner">
+            <div class="popup__insurance-content-block">
+               <div class="popup__insurance-content-body">
+                  <div class="popup__insurance-content-picture">
+                     <img class="popup__insurance-content-img" src="images/popup-insurance-img-02.jpg" alt="">
+                  </div>
+                  <div class="popup__insurance-content-title">
+                     Коронки
+                  </div>
+                  <div class="popup__insurance-content-text">
+                     Наши высококвалифицированные стоматологи создают индивидуально подогнанные зубные коронки, которые
+                     эстетически привлекательны и в то же время соответствуют цвету и форме ваших естественных зубов.
+                     Защитите поврежденные зубы и восстановите свою уверенность с помощью коронок, которые вернут вашу
+                     сияющую улыбку.
+                  </div>
+               </div>
             </div>
-            <div class="call-back__description-box">
-               <p class="call-back__description">
-                  Нажимая на кнопку “Перезвонить”, вы даете согласие на обработку своих персональных данных
-               </p>
+            <div class="popup__insurance-form-block">
+               <div class="insurance__user-box">
+                  <div class="insurance-user__item">
+                     <label for="formNameModal-2" class="insurance-form__label">Введите ваше имя</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-user-icon.svg" alt="">
+                        <input id="formNameModal-2" type="text" name="name" class="insurance-form__input"
+                           placeholder="Имя" autocomplete="off" required>
+                     </div>
+                  </div>
+                  <div class="insurance-user__item">
+                     <label for="formPhoneModal-2" class="insurance-form__label">Введите ваш номер телефона:</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-phone-icon.svg" alt="">
+                        <input id="formPhoneModal-2" type="tel" name="phone" class="insurance-form__input"
+                           placeholder="Номер телефона" autocomplete="off" required>
+                     </div>
+                  </div>
+                  <div class="insurance-user__item">
+                     <label for="formMailModal-2" class="insurance-form__label">Введите ваш e-mail</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-mail-icon.svg" alt="">
+                        <input id="formMailModal-2" type="email" name="mail" class="insurance-form__input"
+                           placeholder="E-mail" autocomplete="off" required>
+                     </div>
+                  </div>
+               </div>
+               <div class="insurance__btn-box">
+                  <a class="insurance__btn basic__btn" data-fancybox data-src="#thanks" href="javascript:;">
+                     Оставить заявку
+                  </a>
+               </div>
+               <div class="insurance__description-box">
+                  <p class="insurance__description">
+                     <label class="insurance__label">
+                        <input class="insurance__chekbox" type="checkbox" checked>
+                        <span class="insurance__chekbox-style"></span>
+                     </label>
+                     Соглашаюсь с
+                     <a class="application__description-concordance" href="#">
+                        условиями передачи данных
+                     </a>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </form>
+   </div>
+
+   <div class="popup__insurance popup__implants" id="bridges">
+      <form class="popup__insurance-form" action="#">
+         <div class="popup__insurance-inner">
+            <div class="popup__insurance-content-block">
+               <div class="popup__insurance-content-body">
+                  <div class="popup__insurance-content-picture">
+                     <img class="popup__insurance-content-img" src="images/popup-insurance-img-03.jpg" alt="">
+                  </div>
+                  <div class="popup__insurance-content-title">
+                     Мосты
+                  </div>
+                  <div class="popup__insurance-content-text">
+                     Наши высококачественные зубные мосты не только закрывают раздражающие промежутки между зубами, но и
+                     дают уверенность в том, что страховка покроет расходы. Ваше здоровье и сияющая улыбка - наш главный
+                     приоритет. Мы сотрудничаем со страховыми компаниями, чтобы обеспечить Вам наилучшее решение по
+                     установке зубных мостов, не сталкиваясь с финансовой неопределенностью.
+                  </div>
+               </div>
+            </div>
+            <div class="popup__insurance-form-block">
+               <div class="insurance__user-box">
+                  <div class="insurance-user__item">
+                     <label for="formNameModal-3" class="insurance-form__label">Введите ваше имя</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-user-icon.svg" alt="">
+                        <input id="formNameModal-3" type="text" name="name" class="insurance-form__input"
+                           placeholder="Имя" autocomplete="off" required>
+                     </div>
+                  </div>
+                  <div class="insurance-user__item">
+                     <label for="formPhoneModal-3" class="insurance-form__label">Введите ваш номер телефона:</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-phone-icon.svg" alt="">
+                        <input id="formPhoneModal-3" type="tel" name="phone" class="insurance-form__input"
+                           placeholder="Номер телефона" autocomplete="off" required>
+                     </div>
+                  </div>
+                  <div class="insurance-user__item">
+                     <label for="formMailModal-3" class="insurance-form__label">Введите ваш e-mail</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-mail-icon.svg" alt="">
+                        <input id="formMailModal-3" type="email" name="mail" class="insurance-form__input"
+                           placeholder="E-mail" autocomplete="off" required>
+                     </div>
+                  </div>
+               </div>
+               <div class="insurance__btn-box">
+                  <a class="insurance__btn basic__btn" data-fancybox data-src="#thanks" href="javascript:;">
+                     Оставить заявку
+                  </a>
+               </div>
+               <div class="insurance__description-box">
+                  <p class="insurance__description">
+                     <label class="insurance__label">
+                        <input class="insurance__chekbox" type="checkbox" checked>
+                        <span class="insurance__chekbox-style"></span>
+                     </label>
+                     Соглашаюсь с
+                     <a class="application__description-concordance" href="#">
+                        условиями передачи данных
+                     </a>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </form>
+   </div>
+
+   <div class="popup__insurance popup__implants" id="brackets">
+      <form class="popup__insurance-form" action="#">
+         <div class="popup__insurance-inner">
+            <div class="popup__insurance-content-block">
+               <div class="popup__insurance-content-body">
+                  <div class="popup__insurance-content-picture">
+                     <img class="popup__insurance-content-img" src="images/popup-insurance-img-04.jpg" alt="">
+                  </div>
+                  <div class="popup__insurance-content-title">
+                     Брекеты
+                  </div>
+                  <div class="popup__insurance-content-text">
+                     Наши компетентные стоматологи предлагают инновационные решения для брекетов для людей любого
+                     возраста. Будь то классические металлические брекеты или дискретные прозрачные инвизиблы – мы
+                     поможем вам плавно и эффективно скорректировать ваши зубы. Откройте для себя радость идеальной
+                     улыбки и улучшенного прикуса.
+                  </div>
+               </div>
+            </div>
+            <div class="popup__insurance-form-block">
+               <div class="insurance__user-box">
+                  <div class="insurance-user__item">
+                     <label for="formNameModal-4" class="insurance-form__label">Введите ваше имя</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-user-icon.svg" alt="">
+                        <input id="formNameModal-4" type="text" name="name" class="insurance-form__input"
+                           placeholder="Имя" autocomplete="off" required>
+                     </div>
+                  </div>
+                  <div class="insurance-user__item">
+                     <label for="formPhoneModal-4" class="insurance-form__label">Введите ваш номер телефона:</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-phone-icon.svg" alt="">
+                        <input id="formPhoneModal-4" type="tel" name="phone" class="insurance-form__input"
+                           placeholder="Номер телефона" autocomplete="off" required>
+                     </div>
+                  </div>
+                  <div class="insurance-user__item">
+                     <label for="formMailModal-4" class="insurance-form__label">Введите ваш e-mail</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-mail-icon.svg" alt="">
+                        <input id="formMailModal-4" type="email" name="mail" class="insurance-form__input"
+                           placeholder="E-mail" autocomplete="off" required>
+                     </div>
+                  </div>
+               </div>
+               <div class="insurance__btn-box">
+                  <a class="insurance__btn basic__btn" data-fancybox data-src="#thanks" href="javascript:;">
+                     Оставить заявку
+                  </a>
+               </div>
+               <div class="insurance__description-box">
+                  <p class="insurance__description">
+                     <label class="insurance__label">
+                        <input class="insurance__chekbox" type="checkbox" checked>
+                        <span class="insurance__chekbox-style"></span>
+                     </label>
+                     Соглашаюсь с
+                     <a class="application__description-concordance" href="#">
+                        условиями передачи данных
+                     </a>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </form>
+   </div>
+
+   <div class="popup__insurance popup__implants" id="prostheses">
+      <form class="popup__insurance-form" action="#">
+         <div class="popup__insurance-inner">
+            <div class="popup__insurance-content-block">
+               <div class="popup__insurance-content-body">
+                  <div class="popup__insurance-content-picture">
+                     <img class="popup__insurance-content-img" src="images/popup-insurance-img-05.jpg" alt="">
+                  </div>
+                  <div class="popup__insurance-content-title">
+                     Протезы
+                  </div>
+                  <div class="popup__insurance-content-text">
+                     Являются проверенным решением для пациентов с отсутствием зубов. Это могут быть как частичные
+                     протезы, заполняющие некоторые промежутки, так и полные протезы, заменяющие все зубы. Наши зубные
+                     протезы обеспечивают комфорт и эстетику, облегчают жевание и речь. Свяжитесь, чтобы получить
+                     информацию о страховом покрытии зубных протезов.
+                  </div>
+               </div>
+            </div>
+            <div class="popup__insurance-form-block">
+               <div class="insurance__user-box">
+                  <div class="insurance-user__item">
+                     <label for="formNameModal-5" class="insurance-form__label">Введите ваше имя</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-user-icon.svg" alt="">
+                        <input id="formNameModal-5" type="text" name="name" class="insurance-form__input"
+                           placeholder="Имя" autocomplete="off" required>
+                     </div>
+                  </div>
+                  <div class="insurance-user__item">
+                     <label for="formPhoneModal-5" class="insurance-form__label">Введите ваш номер телефона:</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-phone-icon.svg" alt="">
+                        <input id="formPhoneModal-5" type="tel" name="phone" class="insurance-form__input"
+                           placeholder="Номер телефона" autocomplete="off" required>
+                     </div>
+                  </div>
+                  <div class="insurance-user__item">
+                     <label for="formMailModal-5" class="insurance-form__label">Введите ваш e-mail</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-mail-icon.svg" alt="">
+                        <input id="formMailModal-5" type="email" name="mail" class="insurance-form__input"
+                           placeholder="E-mail" autocomplete="off" required>
+                     </div>
+                  </div>
+               </div>
+               <div class="insurance__btn-box">
+                  <a class="insurance__btn basic__btn" data-fancybox data-src="#thanks" href="javascript:;">
+                     Оставить заявку
+                  </a>
+               </div>
+               <div class="insurance__description-box">
+                  <p class="insurance__description">
+                     <label class="insurance__label">
+                        <input class="insurance__chekbox" type="checkbox" checked>
+                        <span class="insurance__chekbox-style"></span>
+                     </label>
+                     Соглашаюсь с
+                     <a class="application__description-concordance" href="#">
+                        условиями передачи данных
+                     </a>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </form>
+   </div>
+
+   <div class="popup__insurance popup__implants" id="whitening">
+      <form class="popup__insurance-form" action="#">
+         <div class="popup__insurance-inner">
+            <div class="popup__insurance-content-block">
+               <div class="popup__insurance-content-body">
+                  <div class="popup__insurance-content-picture">
+                     <img class="popup__insurance-content-img" src="images/popup-insurance-img-06.jpg" alt="">
+                  </div>
+                  <div class="popup__insurance-content-title">
+                     Отбеливание
+                  </div>
+                  <div class="popup__insurance-content-text">
+                     Процедура профессионального отбеливания - это безопасный и эффективный способ удаления
+                     обесцвечивания и пятен с зубов. Благодаря использованию высококачественных отбеливающих средств
+                     восстанавливается естественная белизна зубов, и вы снова можете улыбаться с уверенностью.
+                  </div>
+               </div>
+            </div>
+            <div class="popup__insurance-form-block">
+               <div class="insurance__user-box">
+                  <div class="insurance-user__item">
+                     <label for="formNameModal-6" class="insurance-form__label">Введите ваше имя</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-user-icon.svg" alt="">
+                        <input id="formNameModal-6" type="text" name="name" class="insurance-form__input"
+                           placeholder="Имя" autocomplete="off" required>
+                     </div>
+                  </div>
+                  <div class="insurance-user__item">
+                     <label for="formPhoneModal-6" class="insurance-form__label">Введите ваш номер телефона:</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-phone-icon.svg" alt="">
+                        <input id="formPhoneModal-6" type="tel" name="phone" class="insurance-form__input"
+                           placeholder="Номер телефона" autocomplete="off" required>
+                     </div>
+                  </div>
+                  <div class="insurance-user__item">
+                     <label for="formMailModal-6" class="insurance-form__label">Введите ваш e-mail</label>
+                     <div class="insurance-form__input-box">
+                        <img class="insurance-form__input-img" src="images/icons/input-mail-icon.svg" alt="">
+                        <input id="formMailModal-6" type="email" name="mail" class="insurance-form__input"
+                           placeholder="E-mail" autocomplete="off" required>
+                     </div>
+                  </div>
+               </div>
+               <div class="insurance__btn-box">
+                  <a class="insurance__btn basic__btn" data-fancybox data-src="#thanks" href="javascript:;">
+                     Оставить заявку
+                  </a>
+               </div>
+               <div class="insurance__description-box">
+                  <p class="insurance__description">
+                     <label class="insurance__label">
+                        <input class="insurance__chekbox" type="checkbox" checked>
+                        <span class="insurance__chekbox-style"></span>
+                     </label>
+                     Соглашаюсь с
+                     <a class="application__description-concordance" href="#">
+                        условиями передачи данных
+                     </a>
+                  </p>
+               </div>
             </div>
          </div>
       </form>
